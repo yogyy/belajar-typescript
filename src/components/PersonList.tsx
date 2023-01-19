@@ -1,13 +1,12 @@
+import {Name} from "./PersonTypes";
+
 type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
+  names: Name[];
 };
-export default function PersonList({ names }: PersonListProps) {
+export default function PersonList({names}: PersonListProps) {
   return (
     <div>
-      {names.map(name => {
+      {names.map((name) => {
         return (
           <h2 key={name.first}>
             {name.first} {name.last}
