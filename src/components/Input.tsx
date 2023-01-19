@@ -3,7 +3,7 @@ type InputP = {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function Input({value}: InputP) {
+export default function Input({value, handleChange}: InputP) {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     console.log(event.target.value);
   };
