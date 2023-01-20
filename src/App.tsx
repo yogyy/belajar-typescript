@@ -1,30 +1,12 @@
 import "./App.css";
-import Person from "./components/Person";
-import PersonList from "./components/PersonList";
+import Loggedin from "./components/State/Loggedin";
+import User from "./components/State/User";
 
 function App() {
-  const personName = {
-    first: "John",
-    last: "Constantine",
-  };
-  const nameList = [
-    {
-      first: "Bruce",
-      last: "Wayne",
-    },
-    {
-      first: "Clark",
-      last: "Kent",
-    },
-    {
-      first: "Barry",
-      last: "Allen",
-    },
-  ];
   return (
     <div className="app">
-      <Person name={personName} />
-      <PersonList names={nameList} />
+      <Loggedin />
+      <User />
     </div>
   );
 }
