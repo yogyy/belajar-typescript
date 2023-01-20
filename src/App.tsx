@@ -1,12 +1,13 @@
 import "./App.css";
-import Counter from "./components/State/Counter";
-import Loggedin from "./components/State/Loggedin";
-import User from "./components/State/User";
+import Box from "./components/context/Box";
+import ThemeContextxProvider from "./components/context/ThemeContext";
 
 function App() {
   return (
     <div className="app">
-      <Counter />
+      <ThemeContextxProvider>
+        <Box />
+      </ThemeContextxProvider>
     </div>
   );
 }
