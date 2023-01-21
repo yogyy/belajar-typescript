@@ -1,18 +1,10 @@
 import "./App.css";
-import List from "./components/generic/List";
+import RandomNumber from "./components/restriciton/RandomNumber";
 
 function App() {
   return (
     <div className="app">
-      {/* <List items={[1, 2, 3]} onClick={(items) => console.log(items)} /> */}
-      <List
-        items={[
-          {id: 1, first: "Lex", last: "Luthor"},
-          {id: 2, first: "The", last: "Joker"},
-          {id: 3, first: "Reverse", last: "Flash"},
-        ]}
-        onClick={(items) => console.log(items)}
-      />
+      <RandomNumber value={1999} isPositive={true} />
     </div>
   );
 }
