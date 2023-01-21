@@ -1,4 +1,4 @@
-type ProfilProps = {
+export type ProfilProps = {
   name: string;
 };
 
